@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://dbcv83lb3strt"]
+
+[ext_resource type="Script" uid="uid://bb6ate4p5n22b" path="res://sandbox/end.gd" id="1_5qpc2"]
+
+[sub_resource type="SystemFont" id="SystemFont_hwrdp"]
+font_names = PackedStringArray("Bahnschrift")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6powl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lcpwa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_prbeq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngffd"]
+
+[sub_resource type="Theme" id="Theme_re718"]
+Button/colors/font_color = Color(0.5803922, 0.99215686, 1, 1)
+Button/constants/outline_size = 5
+Button/fonts/font = SubResource("SystemFont_hwrdp")
+Button/styles/disabled = SubResource("StyleBoxEmpty_6powl")
+Button/styles/focus = SubResource("StyleBoxEmpty_6powl")
+Button/styles/hover = SubResource("StyleBoxEmpty_lcpwa")
+Button/styles/normal = SubResource("StyleBoxEmpty_prbeq")
+Button/styles/pressed = SubResource("StyleBoxEmpty_ngffd")
+Label/constants/outline_size = 5
+Label/fonts/font = SubResource("SystemFont_hwrdp")
+
+[node name="End" type="Node2D" unique_id=1068371677]
+script = ExtResource("1_5qpc2")
+
+[node name="Control" type="Control" parent="." unique_id=1369576403]
+custom_minimum_size = Vector2(320, 180)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 320.0
+offset_bottom = 180.0
+theme = SubResource("Theme_re718")
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=136951535]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1499807906]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=2089486551]
+layout_mode = 2
+
+[node name="LabelInfos" type="Label" parent="Control/MarginContainer/VBoxContainer" unique_id=146402100]
+layout_mode = 2
+offset_transform_enabled = true
+text = "Congratulations!
+
+Time: 00:00:00
+Deaths: 0
+Secrets found: 0/0
+
+Press any button"
+horizontal_alignment = 1

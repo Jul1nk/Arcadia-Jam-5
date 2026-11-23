@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dsaewf66doat2"]
+
+[ext_resource type="PackedScene" uid="uid://dw8u0kkqnghxr" path="res://map.ldtk" id="1_hfd00"]
+
+[node name="map" unique_id=1516060605 instance=ExtResource("1_hfd00")]
+texture_filter = 1

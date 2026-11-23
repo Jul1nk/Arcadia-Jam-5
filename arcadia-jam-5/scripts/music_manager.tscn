@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://8a5fns0rtmh"]
+
+[ext_resource type="Script" uid="uid://mml136chq8u1" path="res://scripts/music_manager.gd" id="1_olnqi"]
+[ext_resource type="AudioStream" uid="uid://cb7chniwbfjwu" path="res://sfx/InTheMountains-FINAL.mp3" id="2_oqf2m"]
+[ext_resource type="AudioStream" uid="uid://ba5f72gno8cej" path="res://sfx/mountainclimbing.mp3" id="3_oqf2m"]
+
+[sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_ha6rg"]
+clip_count = 2
+clip_0/name = &"Title"
+clip_0/stream = ExtResource("3_oqf2m")
+clip_0/auto_advance = 0
+clip_1/name = &"Game"
+clip_1/stream = ExtResource("2_oqf2m")
+clip_1/auto_advance = 0
+
+[node name="MusicManager" type="Node" unique_id=771336315]
+process_mode = 3
+script = ExtResource("1_olnqi")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1215506706]
+stream = SubResource("AudioStreamInteractive_ha6rg")
+volume_db = -80.0

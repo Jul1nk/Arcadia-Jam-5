@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://dhgpn3a632iin"]
+
+[ext_resource type="Script" uid="uid://kqjt0jcm8qi1" path="res://sandbox/title.gd" id="1_ngpe5"]
+[ext_resource type="Texture2D" uid="uid://oi06tlm6akqv" path="res://sprites/bg/full_bg.png" id="1_np2bt"]
+[ext_resource type="Texture2D" uid="uid://dgccvcem5vq7w" path="res://sprites/other/title.png" id="3_hacg1"]
+
+[sub_resource type="SystemFont" id="SystemFont_ngpe5"]
+font_names = PackedStringArray("Bahnschrift")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hacg1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1f27l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lcpwa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_prbeq"]
+
+[sub_resource type="Theme" id="Theme_bx6oi"]
+Button/colors/font_color = Color(0.5803922, 0.99215686, 1, 1)
+Button/constants/outline_size = 5
+Button/fonts/font = SubResource("SystemFont_ngpe5")
+Button/styles/disabled = SubResource("StyleBoxEmpty_hacg1")
+Button/styles/focus = SubResource("StyleBoxEmpty_hacg1")
+Button/styles/hover = SubResource("StyleBoxEmpty_1f27l")
+Button/styles/normal = SubResource("StyleBoxEmpty_lcpwa")
+Button/styles/pressed = SubResource("StyleBoxEmpty_prbeq")
+
+[node name="Title" type="Node2D" unique_id=2105634343]
+texture_filter = 1
+script = ExtResource("1_ngpe5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1735143066]
+position = Vector2(160, 180)
+texture = ExtResource("1_np2bt")
+
+[node name="Title" type="Sprite2D" parent="." unique_id=974154917]
+position = Vector2(160, 212)
+texture = ExtResource("3_hacg1")
+
+[node name="Control" type="Control" parent="." unique_id=1390672270]
+custom_minimum_size = Vector2(320, 180)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 320.0
+offset_bottom = 180.0
+theme = SubResource("Theme_bx6oi")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=17737684]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_top = 88
+theme_override_constants/margin_right = 64
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=436206100]
+layout_mode = 2
+
+[node name="StartButton" type="Button" parent="Control/MarginContainer/VBoxContainer" unique_id=1672943601]
+layout_mode = 2
+offset_transform_enabled = true
+text = "Start Game"
+
+[node name="HardmodeButton" type="Button" parent="Control/MarginContainer/VBoxContainer" unique_id=1373448830]
+visible = false
+layout_mode = 2
+offset_transform_enabled = true
+text = "Hard mode (finish game first)"
+
+[node name="QuitButton" type="Button" parent="Control/MarginContainer/VBoxContainer" unique_id=1802359312]
+layout_mode = 2
+offset_transform_enabled = true
+text = "Quit"

@@ -1,0 +1,37 @@
+[remap]
+
+importer="ldtk.import"
+type="PackedScene"
+uid="uid://d3uygr2wmu1k5"
+path="res://.godot/imported/map.ldtk-6db55f7f6a84df03e31a1f13bbc1759a.scn"
+
+[deps]
+
+files=["res://map/backups/70313dc0-48b0-11f1-8926-3dfc58e3ffba_2026-11-22_12-38-40/levels/MainLevel.scn", "res://.godot/imported/map.ldtk-6db55f7f6a84df03e31a1f13bbc1759a.scn"]
+
+source_file="res://map/backups/70313dc0-48b0-11f1-8926-3dfc58e3ffba_2026-11-22_12-38-40/map.ldtk"
+dest_files=["res://.godot/imported/map.ldtk-6db55f7f6a84df03e31a1f13bbc1759a.scn", "res://map/backups/70313dc0-48b0-11f1-8926-3dfc58e3ffba_2026-11-22_12-38-40/levels/MainLevel.scn", "res://.godot/imported/map.ldtk-6db55f7f6a84df03e31a1f13bbc1759a.scn"]
+
+[params]
+
+World=""
+group_world_layers=false
+Level=""
+pack_levels=true
+Layer=""
+layers_always_visible=false
+Tileset=""
+tileset_custom_data=false
+integer_grid_tilesets=false
+atlas_texture_type=0
+Entity=""
+resolve_entityrefs=true
+use_entity_placeholders=false
+Post Import=""
+tileset_post_import=""
+entities_post_import=""
+level_post_import=""
+world_post_import=""
+Debug=""
+force_tileset_reimport=false
+verbose_output=false
